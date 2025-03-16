@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<h1>Clean and degraded signals</h1>
+
+<table>
+    <tr>
+        <th rowspan="2">clean</th>
+        <th>clipped</th>
+        <th>gaps</th>
+        <th>random loss</th>
+    </tr>
+    <tr>
+        <td>55% samples</td>
+        <td>40 ms</td>
+        <td>60% samples</td>
+    </tr>    
+    <tr>
+        <td><audio controls><source src="audio/piano_clean.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_01_degraded.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_02_degraded.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_03_degraded.wav"></audio></td>
+    </tr>
+</table>
+
+<h1>Reconstructions</h1>
+
+<table>
+    <tr>
+        <th>method</th>
+        <th>clipped</th>
+        <th>gaps</th>
+        <th>random loss</th>
+    </tr>
+    <tr>
+        <td>reweighted <a href="#ref1">[1]</a></td>
+        <td><audio controls><source src="audio/piano_01_reweighted.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_02_reweighted.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_03_reweighted.wav"></audio></td>
+    </tr>
+    <tr>
+        <td>SPAIN <a href="#ref2">[2]</a></td>
+        <td><audio controls><source src="audio/piano_01_SPAIN.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_02_SPAIN.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_03_SPAIN.wav"></audio></td>
+    </tr>
+    <tr>
+        <td>Janssen <a href="#ref3">[3]</a></td>
+        <td><audio controls><source src="audio/piano_01_Janssen.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_02_Janssen.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_03_Janssen.wav"></audio></td>
+    </tr>
+    <tr>
+        <td>NMF <a href="#ref4">[4]</a></td>
+        <td><audio controls><source src="audio/piano_01_AM.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_02_AM.wav"></audio></td>
+        <td><audio controls><source src="audio/piano_03_AM.wav"></audio></td>
+    </tr>
+</table>
+
+<h1>References</h1>
+
+<ol>
+    <li id=ref1>
+        O. Mokrý and P. Rajmic,
+        “Audio Inpainting: Revisited and Reweighted,”
+        in <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing</i>, vol. 28, 2020.
+        <a href="https://doi.org/10.1109/TASLP.2020.3030486">10.1109/TASLP.2020.3030486</a>
+    </li>
+    <li id=ref2>
+        O. Mokrý, P. Záviška, P. Rajmic and V. Veselý,
+        “Introducing SPAIN (SParse Audio INpainter),”
+        <i>2019 27th European Signal Processing Conference (EUSIPCO)</i>, A Coruna, Spain, 2019.
+        <a href="https://doi.org/10.23919/EUSIPCO.2019.8902560">10.23919/EUSIPCO.2019.8902560</a>
+        [<a href="https://github.com/ondrejmokry/InpaintingRevisited">GitHub</a>]
+    </li>
+    <li id=ref3>
+        A. J. E. M. Janssen, R. N. J. Veldhuis, and L. B. Vries,
+        “Adaptive interpolation of discrete-time signals that can be modeled as autoregressive processes,”
+        <i>IEEE Transactions on Acoustics, Speech and Signal Processing</i>, vol. 34, no. 2, 1986.
+        <a href="https://doi.org/10.1109/TASSP.1986.1164824">10.1109/TASSP.1986.1164824</a>
+    </li>
+    <li id=ref4>
+        O. Mokrý, P. Magron, T. Oberlin and C. Févotte,
+        “Algorithms for audio inpainting based on probabilistic nonnegative matrix factorization,”
+        <i>Signal Processing</i>,
+        vol 206,
+        2023.
+        <a href="https://doi.org/10.1016/j.sigpro.2022.108905">10.1016/j.sigpro.2022.108905</a>
+        [<a href="https://github.com/ondrejmokry/InpaintingNMF">GitHub</a>]
+    </li>
+</ol>

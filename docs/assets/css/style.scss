@@ -1,0 +1,72 @@
+---
+---
+
+@import "{{ site.theme }}";
+table {
+  margin: 15px;
+}
+
+.clicked {
+  display: inline-block;
+  margin-bottom: 0rem;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  
+  &:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cudlik {
+  display: inline-block;
+  margin-bottom: 0rem;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(128, 128, 128, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  
+  &:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+audio {
+    width: 130px;
+    margin:0 auto;
+}
+
+/* Remove the default list styling */
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Add custom numbering with brackets */
+ol li {
+    counter-increment: list-counter; /* Increment the counter */
+}
+
+ol li::before {
+    content: "[" counter(list-counter) "] "; /* Add brackets around the counter */
+    font-weight: bold; /* Optional styling for the brackets */
+    margin-right: 8px; /* Space between the counter and the list item text */
+}
+
+/* Initialize the counter for the ordered list */
+ol {
+    counter-reset: list-counter;
+}
