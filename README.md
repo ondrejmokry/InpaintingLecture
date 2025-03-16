@@ -4,13 +4,14 @@ Lecture on optimization-based audio reconstruction, in particular audio inpainti
 
 The repository contains the slides and accompanying audio examples.
 
+The audio examples can also be played from the GitHub page [https://ondrejmokry.github.io/InpaintingLecture/](here).
+
 ## Contents
 
 - What do we mean by damaged audio signals
 - Optimization-based restoration
   - Generic scheme
   - Inverse problems more formally
-  - Overview of current approaches
 - Sparse representations
   - ... in audio
   - Algorithms
@@ -19,4 +20,4 @@ The repository contains the slides and accompanying audio examples.
   - Autoregressive modeling
   - Matrix factorization
 - On the computational complexity and evaluation
-- Future research and possible cooperation
+- Future research
