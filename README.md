@@ -4,7 +4,7 @@ Lecture on optimization-based audio reconstruction, in particular audio inpainti
 
 The repository contains the slides and accompanying audio examples.
 
-The audio examples can also be played from the GitHub page [https://ondrejmokry.github.io/InpaintingLecture/](here).
+The audio examples can also be played from the GitHub page [here](https://ondrejmokry.github.io/InpaintingLecture/).
 
 ## Contents
 
